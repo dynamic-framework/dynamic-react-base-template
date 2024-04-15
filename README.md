@@ -1,6 +1,6 @@
 # dynamic-react-base-template
 ## Requirements:
-- Node@20+
+- node@20+
 - npm@10+
 - @modyo/cli@latest
 
