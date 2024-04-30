@@ -29,5 +29,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Lint package
         run: npm run eslint
+      - name: Stylelint package
+        run: npm run stylelint
       - name: Test package
         run: npm run test
