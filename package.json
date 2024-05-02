@@ -20,6 +20,8 @@
     "@babel/preset-env": "^7.23.2",
     "@babel/preset-react": "^7.22.15",
     "@babel/preset-typescript": "^7.23.2",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@svgr/webpack": "^8.1.0",
     "@types/jest": "^29.5.6",
     "@types/node": "^18.15.3",
@@ -74,7 +76,8 @@
     "push:debug": "npm run build && DEBUG=* npx @modyo/cli@latest push --publish",
     "preview": "npm run start && npx @modyo/cli@latest preview",
     "lint-staged": "lint-staged",
-    "prepare": "husky"
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
   },
   "browserslist": {
     "production": [
