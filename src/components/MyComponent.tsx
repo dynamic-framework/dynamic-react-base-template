@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import classNames from 'classnames';
-import { useTranslation } from 'react-i18next';
 import { DButton } from '@dynamic-framework/ui-react';
+import classNames from 'classnames';
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
-import MyLogos from './MyLogos';
 import MyLink from './MyLink';
+import MyLogos from './MyLogos';
 
 export default function MyComponent() {
   const { t } = useTranslation();
