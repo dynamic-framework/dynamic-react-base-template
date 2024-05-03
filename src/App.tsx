@@ -1,5 +1,6 @@
 import { DCard, useDContext } from '@dynamic-framework/ui-react';
 import { useEffect } from 'react';
+
 import MyComponent from './components/MyComponent';
 import { CONTEXT_CONFIG } from './config/widgetConfig';
 
