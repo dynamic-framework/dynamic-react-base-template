@@ -3,7 +3,7 @@
   "version": "0.3.0",
   "private": true,
   "dependencies": {
-    "@dynamic-framework/ui-react": "^1.19.1",
+    "@dynamic-framework/ui-react": "^1.20.0",
     "axios": "^1.6.0",
     "classnames": "^2.3.2",
     "i18next": "^23.6.0",
@@ -68,7 +68,7 @@
     "build": "npm run clear && NODE_ENV=production webpack build --mode production --config .config/webpack.js",
     "clear": "node .config/clear.mjs",
     "commitlint": "commitlint --edit",
-    "eslint": "eslint src/**/*{.ts,.tsx}",
+    "eslint": "eslint 'src/**/*.ts' 'src/**/*.tsx'",
     "lint-staged": "lint-staged",
     "prepare": "husky",
     "preview": "npm run start && npx @modyo/cli@latest preview",
