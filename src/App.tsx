@@ -12,8 +12,8 @@ export default function App() {
   }, [setContext]);
 
   return (
-    <DCard className="container my-14">
-      <DCard.Body className="p-14">
+    <DCard className="container my-md-14">
+      <DCard.Body className="p-4 p-md-14">
         <MyComponent />
       </DCard.Body>
     </DCard>

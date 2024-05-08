@@ -1,5 +1,11 @@
 @import "@dynamic-framework/ui-react/src/style/abstracts/+import";
 
-body {
+.widget-name {
   background-color: rgb(var(--#{$prefix}secondary-soft-rgb));
+
+  /* Add here your own styles only for this widget */
+
+  .text-muted {
+    word-break: break-all;
+  }
 }

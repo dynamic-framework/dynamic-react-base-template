@@ -17,11 +17,11 @@ export default function MyComponent() {
         'align-items-center justify-content-center',
       )}
     >
-      <h1 className="fw-bolder">{t('title')}</h1>
-      <p className="h5 text-muted">
+      <h1 className="fw-bolder text-center">{t('title')}</h1>
+      <p className="h5 text-muted text-center py-4">
         Get started by editing
-        {' '}
-        <span className="font-monospace">src/components/MyComponent.tsx</span>
+        <br />
+        <span className="font-monospace text-primary-500">src/components/MyComponent.tsx</span>
       </p>
       <DButton
         onClick={() => setShowLogos((prevState) => !prevState)}
