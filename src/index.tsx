@@ -1,6 +1,6 @@
+import { DContextProvider } from '@dynamic-framework/ui-react';
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
-import { DContextProvider } from '@dynamic-framework/ui-react';
 
 import './config/liquidConfig';
 import './config/i18nConfig';
