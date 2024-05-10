@@ -40,10 +40,10 @@ MODYO_TOKEN=gT0ogV43LSy4nV9cYtc_hH0i_rUFa01q-12ptFzoW8
 MODYO_VERSION=10
 
 # Directory containing the micro frontend bundle
-MODYO_BUILD_DIRECTORY=dist/modyo-angular-base-template
+MODYO_BUILD_DIRECTORY=build
 
 # Name to identify your Micro Frontend in Modyo
-WIDGET_NAME=modyo-angular-base-template
+WIDGET_NAME=dynamic-react-base-template
 
 # Directive necessary for safely removing some libraries from the liquid parser
 MODYO_DISABLE_LIQUID_REGEX=raw
