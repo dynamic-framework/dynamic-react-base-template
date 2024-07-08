@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@dynamic-framework/dynamic-commons-base-template": "^1.2.0",
-    "@dynamic-framework/ui-react": "^1.25.0",
+    "@dynamic-framework/ui-react": "^1.27.0",
     "axios": "^1.6.0",
     "classnames": "^2.3.2",
     "i18next": "^23.6.0",
