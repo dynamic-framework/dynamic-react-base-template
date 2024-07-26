@@ -75,8 +75,8 @@
           {
             "groups": [
               ["builtin", "external", "internal" ],
-              "parent", 
-              "sibling", 
+              "parent",
+              "sibling",
               "index"
             ],
             "newlines-between": "always",
@@ -85,6 +85,18 @@
               "caseInsensitive": true
             }
           }
+        ]
+      }
+    },
+    {
+      "files": ["*.spec.ts", "*.spec.tsx", "jest.config.js"],
+      "env": {
+        "jest": true
+      },
+      "rules": {
+        "import/no-extraneous-dependencies": [
+          "error",
+          { "devDependencies": true }
         ]
       }
     }
