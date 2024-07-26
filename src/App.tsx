@@ -1,4 +1,7 @@
-import { DCard, useDContext } from '@dynamic-framework/ui-react';
+import {
+  DCard,
+  useDContext,
+} from '@dynamic-framework/ui-react';
 import { useEffect } from 'react';
 
 import MyComponent from './components/MyComponent';
