@@ -40,7 +40,7 @@ export default function MyComponent() {
         </div>
         <div className="col mb-6">
           <MyLink
-            href="https://dynamicframework.dev/docs/theming"
+            href="https://dynamicframework.dev/theming"
             icon="brush"
             title="Themes"
             description="Learn how to create a unique look-and-feel!"
