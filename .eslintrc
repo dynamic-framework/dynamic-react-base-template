@@ -89,7 +89,11 @@
       }
     },
     {
-      "files": ["*.spec.ts", "*.spec.tsx", "jest.config.js"],
+      "files": [
+        "src/**/*.spec.ts" ,
+        "src/**/*.spec.tsx",
+        "jest.config.js"
+      ],
       "env": {
         "jest": true
       },
@@ -97,7 +101,8 @@
         "import/no-extraneous-dependencies": [
           "error",
           { "devDependencies": true }
-        ]
+        ],
+        "@typescript-eslint/require-await": "off"
       }
     }
   ],
