@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-floating-promises */
 import { configureI18n } from '@dynamic-framework/ui-react';
 
 import en from '../locales/en.json';
