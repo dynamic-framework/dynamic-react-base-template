@@ -1,0 +1,9 @@
+name: Configure repository
+
+on:
+  workflow_dispatch:
+
+jobs:
+  use-configure-repo:
+    uses: dynamic-framework/.github/.github/workflows/configure-repo.yml@feat/configure-repo
+    secrets: inherit
