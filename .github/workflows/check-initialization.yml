@@ -11,6 +11,7 @@ env:
 jobs:
   check-initialization:
     runs-on: ubuntu-latest
+    if: ${{ github.event.repository.is_template == false }}
     steps: 
       - name: Checkout code
         uses: actions/checkout@v4
