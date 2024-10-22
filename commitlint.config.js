@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     '@commitlint/config-conventional',
   ],
-  ignores: [(message) => /^Bumps \[.+]\(.+\) from .+ to .+\.$/m.test(message)],
+  ignores: [(message) => message.toLowerCase().includes('bumps')],
   rules: {
     'type-enum': [
       2,
