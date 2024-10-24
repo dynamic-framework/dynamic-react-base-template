@@ -44,12 +44,6 @@ jobs:
           git rm .github/.initialized
           git commit -m "chore: apply repository config"
           git push
-      
-      - name: Create and configure build branches
-        if: steps.check_file.outputs.file_exists == 'true'
-        run: |
-          echo "Running create and configure build branches workflow"
-          gh workflow run create-build-branches.yml
 
       - name: Skip configuration steps
         if: steps.check_file.outputs.file_exists == 'false'
