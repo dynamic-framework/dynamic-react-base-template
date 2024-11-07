@@ -1,0 +1,50 @@
+name: Check initialization
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  check-initialization:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.repository.is_template == false }}
+    steps: 
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check if initialization file exists
+        id: check_file
+        run: |
+          if [ -f ".github/.initialized" ]; then
+            echo "The initialization file exists."
+            echo "file_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "The initialization file does not exist."
+            echo "file_exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Trigger configuration workflow
+        if: steps.check_file.outputs.file_exists == 'true'
+        run: |
+          echo "Running configuration workflow."
+          gh workflow run use-configure-repo.yml
+
+      - name: Remove initialization flag
+        if: steps.check_file.outputs.file_exists == 'true'
+        run: |
+          echo "Removing initialization marker."
+          git config user.email "github-actions@github.com"
+          git config user.name "GitHub Actions"
+          git rm .github/.initialized
+          git commit -m "chore: apply repository config"
+          git push
+
+      - name: Skip configuration steps
+        if: steps.check_file.outputs.file_exists == 'false'
+        run: echo "Skipping configuration steps."
