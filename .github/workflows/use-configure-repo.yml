@@ -37,5 +37,5 @@ jobs:
   configure-repo:
     needs: check-initialization
     if: ${{ github.event_name == 'workflow_dispatch' || needs.check-initialization.outputs.is_first_commit == 'true' }}
-    uses: dynamic-framework/.github/.github/workflows/configure-repo-pat.yml@feat/configure-repo
+    uses: dynamic-framework/.github/.github/workflows/configure-repo-pat.yml@main
     secrets: inherit
