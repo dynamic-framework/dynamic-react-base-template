@@ -1,5 +1,11 @@
 import * as DynamicFramework from '@dynamic-framework/ui-react';
-import { render, screen, waitFor } from '@testing-library/react';
+import {
+  render,
+  screen,
+  waitFor,
+} from '@testing-library/react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import React from 'react';
 
 import App from '../src/App';
 import { CONTEXT_CONFIG } from '../src/config/widgetConfig';
