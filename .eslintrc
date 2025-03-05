@@ -108,6 +108,13 @@
               "multi": 1
             }
           }
+        ],
+        "react/jsx-indent": [
+          2,
+          2,
+          {
+            "indentLogicalExpressions": true
+          }
         ]
       }
     },
