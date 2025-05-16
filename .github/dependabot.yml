@@ -1,27 +1,25 @@
 version: 2
 updates:
-  # PR - Dynamic Framework
   - package-ecosystem: "npm"
     directory: "/"
+    target-branch: "master"
     schedule:
       interval: "daily"
-    allow:
-      - dependency-name: "@dynamic-framework/dynamic-ui"
     commit-message:
       prefix: "chore"
       include: "scope"
-
-  # PR - Vulnerabilities
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    ignore:
-      - dependency-name: "@dynamic-framework/dynamic-ui"
     groups:
+      # PR - @dynamic-framework/dynamic-ui
+      dynamic-ui:
+        patterns:
+          - "@dynamic-framework/dynamic-ui"
+        commit-message:
+          prefix: "chore"
+          include: "scope"
+      # PR - Vulnerabilities
       vulnerabilities-fixes:
         patterns:
           - "*"
-    commit-message:
-      prefix: "fix"
-      include: "scope"
+        commit-message:
+          prefix: "fix"
+          include: "scope"
