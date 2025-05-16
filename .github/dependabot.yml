@@ -9,17 +9,9 @@ updates:
       prefix: "chore"
       include: "scope"
     groups:
-      # PR - @dynamic-framework/dynamic-ui
       dynamic-ui:
         patterns:
           - "@dynamic-framework/dynamic-ui"
-        commit-message:
-          prefix: "chore"
-          include: "scope"
-      # PR - Vulnerabilities
       vulnerabilities-fixes:
         patterns:
           - "*"
-        commit-message:
-          prefix: "fix"
-          include: "scope"
