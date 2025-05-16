@@ -5,13 +5,24 @@ updates:
     target-branch: "master"
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 0
     commit-message:
       prefix: "chore"
       include: "scope"
+    reviewers: 
+      - "dynamic-framework/dynamic-framework-team"
     groups:
       dynamic-ui:
+        applies-to: version-updates
         patterns:
           - "@dynamic-framework/dynamic-ui"
-      vulnerabilities-fixes:
+        update-types:
+          - "patch"
+          - "minor"
+      security-fixes:
+        applies-to: security-updates
         patterns:
           - "*"
+        update-types:
+          - "patch"
+          - "minor"
