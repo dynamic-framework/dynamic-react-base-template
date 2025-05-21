@@ -5,24 +5,22 @@ updates:
     target-branch: "master"
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 0
     commit-message:
       prefix: "chore"
       include: "scope"
-    reviewers: 
+    reviewers:
       - "dynamic-framework/dynamic-framework-team"
+    open-pull-requests-limit: 1
+    allow:
+      - dependency-name: "@dynamic-framework/ui-react"
+    ignore:
+      - dependency-name: "@dynamic-framework/ui-react"
+        update-types:
+          - version-update:semver-major
     groups:
-      dynamic-ui:
-        applies-to: version-updates
+      ui-react:
         patterns:
-          - "@dynamic-framework/dynamic-ui"
+          - "@dynamic-framework/ui-react"
         update-types:
-          - "patch"
-          - "minor"
-      security-fixes:
-        applies-to: security-updates
-        patterns:
-          - "*"
-        update-types:
-          - "patch"
-          - "minor"
+          - minor
+          - patch
