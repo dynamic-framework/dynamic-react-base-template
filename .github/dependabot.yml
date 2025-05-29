@@ -4,7 +4,8 @@ updates:
     directory: "/"
     target-branch: "master"
     schedule:
-      interval: "daily"
+      interval: "cron"
+      cronjob: "0 7 * * 1"
     commit-message:
       prefix: "chore"
       include: "scope"
