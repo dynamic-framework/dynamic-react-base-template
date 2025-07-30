@@ -1,0 +1,19 @@
+{
+  "release-type": "node",
+  "target-branch": "master",
+  "changelog-sections": [
+    {
+      "type": "feat",
+      "section": "Features"
+    },
+    {
+      "type": "fix",
+      "section": "Bug Fixes"
+    },
+    {
+      "type": "chore",
+      "section": "Chores"
+    }
+  ],
+  "include-v-in-tag": false
+}
