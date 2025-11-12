@@ -3,7 +3,6 @@
 # dependencies
 /node_modules
 /.pnp
-/.vscode
 .pnp.js
 .debug
 
@@ -27,3 +26,6 @@ yarn-error.log*
 .idea
 .env
 
+.yalc
+yalc.lock
+.zip
