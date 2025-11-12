@@ -11,3 +11,8 @@ const resources = {
 };
 
 configureI18n(resources, { lng: SITE_LANG });
+
+export const changeLanguage = (lng: 'es' | 'en') => {
+  configureI18n(resources, { lng });
+  return lng;
+};

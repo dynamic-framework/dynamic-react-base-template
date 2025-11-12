@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import MyLang from './MyLang';
 import MyLink from './MyLink';
 import MyLogos from './MyLogos';
 
@@ -17,6 +18,7 @@ export default function MyComponent() {
         'align-items-center justify-content-center',
       )}
     >
+      <MyLang />
       <h1 className="fw-bolder text-center">{t('title')}</h1>
       <p className="h5 text-muted text-center py-4">
         Get started by editing
@@ -33,7 +35,7 @@ export default function MyComponent() {
         <div className="col mb-6">
           <MyLink
             href="https://dynamicframework.dev/docs"
-            icon="book"
+            icon="Book"
             title="Learn"
             description="Get started with Dynamic Framework!"
           />
@@ -41,7 +43,7 @@ export default function MyComponent() {
         <div className="col mb-6">
           <MyLink
             href="https://dynamicframework.dev/theming"
-            icon="brush"
+            icon="Brush"
             title="Themes"
             description="Learn how to create a unique look-and-feel!"
           />
@@ -49,7 +51,7 @@ export default function MyComponent() {
         <div className="col mb-6">
           <MyLink
             href="https://dynamicframework.dev/components"
-            icon="layout-text-window"
+            icon="Layout"
             title="Experiences"
             description="Explore the fully React-based templates"
           />
