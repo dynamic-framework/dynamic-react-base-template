@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.6.1](https://github.com/dynamic-framework/dynamic-react-base-template/compare/0.6.0...0.6.1) (2026-01-14)
+
+
+### Chores
+
+* **deps-dev:** bump qs from 6.14.0 to 6.14.1 in the npm_and_yarn group across 1 directory ([#117](https://github.com/dynamic-framework/dynamic-react-base-template/issues/117)) ([1a5c3a3](https://github.com/dynamic-framework/dynamic-react-base-template/commit/1a5c3a3a84a8e076b780ce92dfa0774f211f4a1f))
+* **deps-dev:** bump qs in the npm_and_yarn group across 1 directory ([1a5c3a3](https://github.com/dynamic-framework/dynamic-react-base-template/commit/1a5c3a3a84a8e076b780ce92dfa0774f211f4a1f))
+* **deps:** bump @dynamic-framework/ui-react from 1.36.2 to 1.36.4 in the ui-react group ([#114](https://github.com/dynamic-framework/dynamic-react-base-template/issues/114)) ([71c1086](https://github.com/dynamic-framework/dynamic-react-base-template/commit/71c108663ad7002c0ebee32c04a861b97afab280))
+* **deps:** bump @dynamic-framework/ui-react in the ui-react group ([71c1086](https://github.com/dynamic-framework/dynamic-react-base-template/commit/71c108663ad7002c0ebee32c04a861b97afab280))
+
 ## [0.6.0](https://github.com/dynamic-framework/dynamic-react-base-template/compare/0.5.0...0.6.0) (2026-01-14)
 
 
