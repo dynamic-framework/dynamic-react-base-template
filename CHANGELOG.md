@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/dynamic-framework/dynamic-react-base-template/compare/0.5.0...0.6.0) (2026-01-14)
+
+
+### Features
+
+* update ui-react to latest version and improve the initial base template with new API ([#116](https://github.com/dynamic-framework/dynamic-react-base-template/issues/116)) ([a0e6b5d](https://github.com/dynamic-framework/dynamic-react-base-template/commit/a0e6b5d2e745b795fd7f9b65951f6b56894c45c7))
+
 ## [0.5.0](https://github.com/dynamic-framework/dynamic-react-base-template/compare/0.4.0...0.5.0) (2025-08-01)
 
 
