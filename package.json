@@ -3,7 +3,7 @@
   "version": "0.6.1",
   "private": true,
   "dependencies": {
-    "@dynamic-framework/ui-react": "^2.1.1",
+    "@dynamic-framework/ui-react": "^2.2.0",
     "axios": "^1.13.2",
     "classnames": "^2.5.1",
     "i18next": "^25.0.0",
